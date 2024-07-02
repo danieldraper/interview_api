@@ -8,10 +8,11 @@ We have some existing code to help you get started, however feel free to change 
 
 * A merchant must be enabled when creating a refund.
 * A refund cannot be created when the card has expired.
-* A refund must have a unique reference.
-* A refund can be standalone, created against a card.
+* A refund must have a unique per merchant, merchant supplied reference.
+* A refund can be standalone, created directly against a card.
 * A refund against a purchase can be for a partial or full amount of the purchase.
-* A refund must match the currency of the purchase or allowed currencies of the merchant for standlone refunds.
+* A refund must match the currency of the purchase.
+* A standalone refund must match one of the allowed currencies for the merchant.
 
 ## Guidelines
 
